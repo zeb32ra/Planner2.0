@@ -28,6 +28,7 @@ namespace Ezhednevnik
         {
             InitializeComponent();
             zametki = Work_with_file.My_Deserialize<List<Zametka>>("Zametki.json");
+            Date_pic.Text = DateTime.Now.ToString();
         }
         private void Show_zam()
         {
